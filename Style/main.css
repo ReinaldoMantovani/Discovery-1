@@ -1,0 +1,289 @@
+:root {
+    --dark-blue:#4360c8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 93.75%;
+}
+
+body {
+    background-color: #99dfff;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+
+}
+/*============ Titles ===========*/
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+    font-family: 'Ubuntu' ;
+    text-transform: capitalize;
+}
+/*============ Links and Buttons ===========*/
+
+a {
+    font-family: 'Ubuntu';
+    font-size: 19px;
+    color: #065479;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    color:#fff;
+    background:#2fb100;
+    padding: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background:#40a819;
+  
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+a:hover {
+    color: rgb(8, 98, 243);
+   
+   
+}
+
+.button.cancel {
+  color: #f44336;
+  border:2px #f44336 solid;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.button.cancel:hover {
+    opacity: 1;
+}
+
+
+/*============ Header-Logo ===========*/
+header {
+    background-color: #bbe7fb;
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+ header #logo {
+    font-family:'Orbitron', sans-serif;
+    color:#00b0ff ;
+    text-align: center;
+    font-weight: lighter;
+}
+/*=========  Balance  ===========*/
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: white ;
+    
+}
+
+/*========= Cards ==========*/
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.card h3 {
+   font-family:'Ubuntu' ;
+   font-weight:lighter;
+   font-size: 1.3rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.card p {
+   margin-top: 1rem;
+   font-size: 2rem;
+   line-height: 3rem;
+   font-family: 'Ubuntu';
+}
+
+.card.total {
+   background-color:#75da50 ;
+   color: #fff;
+}
+
+/*========= Table ==========*/
+#transaction {
+   display: block;
+   width: 100%;
+   overflow-x: auto;
+}
+
+#data-table {
+   width:100%;
+   border-spacing:0 0.5rem ;
+   color: #969cb3;
+
+}
+
+table th {
+    background: #fff;
+    font-weight: lighter;
+    padding:1rem 2rem ;
+    text-align: left;
+}
+
+table tbody tr {
+    opacity: 0.8;
+}
+
+table tbody tr:hover {
+    opacity: 1;
+}
+
+table tbody td {
+    background-color: white;
+    padding: 1rem 2rem;
+    font-weight: lighter;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+   border-radius:0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+    border-radius:0 0.25rem 0.25rem 0;
+}
+
+td.description {
+    color: var(--dark-blue);
+}
+
+td.income {
+    color:#12a454 ;
+}
+
+td.expense {
+    color:red ;
+}
+/*========= Modal==========*/
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color:rgb(233, 229, 229) ;
+    padding:2.4rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: .5rem;
+}
+/*========= Form==========*/
+.form {
+    max-width: 500px;
+}
+
+.form h2 {
+    top: 0;
+}
+
+ input {
+    border: 0;
+    border-radius: .3rem;
+    padding: .8rem;
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group small {
+    opacity:0.4 ;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+    width: 48%;
+
+}
+
+
+/*========= Footer==========*/
+
+footer {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: #000;
+}
+/*========= Resposive ==========*/
+
+@media (min-width:800px) {
+    html {
+        font-size: 87.5%;
+    }
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}

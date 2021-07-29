@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/main.css">
+    <title>finance$</title>
+</head>
+<body>
+    <header>
+       <img src="/assets/logo.svg" alt="Logo Dev finance">
+    </header>
+      <main class="container">
+           <section id="balance">
+               <h2 class="sr-only">Balanço</h2>
+               <div class="card">
+                   <h3>
+                <span>Entradas</span> 
+                <img src="/assets/income.svg" alt="Image de entradas">
+                  </h3>
+                   <p>R$ 2.800,00</p>
+                   
+               </div>
+
+               <div class="card">
+                   <h3>
+                     <span>Entradas</span>
+                       <img src="/assets/expense.svg" alt="Image de entradas">
+                      </h3>
+                   <p>2.000,00</p>
+
+               </div>
+
+               <div class="card total">
+                   <h3>
+                     <span>Total</span> 
+                       <img src="/assets/total.svg" alt="Image de entradas">
+                      </h3>
+                   <p>R$ 5.000,00</p>
+               </div>
+           </section>
+
+          <section id="transaction">
+             <a href="#" onclick="Modal.open()" class="button new">+ Nova transação</a>
+
+             <h2 class="sr-only">transações</h2>
+
+             <table id="data-table">
+                 <thead>
+                     <tr>
+                         <th>Descrição</th>
+                         <th>Valor</th>
+                         <th>Data</th>
+                         <th></th>
+                     </tr>
+                 </thead>
+                 <tbody> 
+                 </tbody>
+
+             </table>
+          </section>
+      </main>
+
+      <div class="modal-overlay ">
+          <div class="modal">
+            <div id="form">
+                <h2>Nova transação</h2>
+                <form action="">
+                   <div class="input-group">
+                    <label class="sr-only" for="description"></label>
+                     <input type="text" id="description"
+                      name="description" value="" placeholder="Descrição">
+                   </div><!--Input-group-->
+
+                   <div class="input-group">
+                    <label class="sr-only" for="amount">Valor</label>
+                     <input type="number" step="0.01" id="amount"
+                      name="amount" value="" placeholder="0,00"/>
+                      <small class="help">Use o sinal - (negativo) para despesas e ,(virgula) para casas decimais</small>
+                   </div><!--Input-group2-->
+
+                   <div class="input-group">
+                    <label class="sr-only" for="date"></label>
+                     <input type="date" id="date"
+                      name="date" value="" >
+                   </div><!--Input-group3-->
+
+                   <div class="input-group actions">
+                       <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
+                       <button>Salvar</button>
+                   </div>
+                </form>
+            </div><!--Form-->         
+          </div><!--Modal-->
+      </div><!--Modal-overlay-->
+
+     <footer><p>Finance$.Dev</p></footer>
+
+
+    <script src="Js/index.js"></script>
+</body>
+</html>
