@@ -3,10 +3,8 @@
 - [JavaScript](#)
 - [SVG](#)
 - [JSON_Local_Storage](#)
-## 💻 Acess the site 🚀
-Access the site through this link:
-*[Click Here](https://dev-finances-eight.vercel.app/)
-## ♻️ Project
+## 
+## 💻  Project 🚀
 Control your finances💰using this app
 ## Additional features
 <br/>
