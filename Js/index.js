@@ -124,7 +124,7 @@ const Utils = {
     formatCurrency(value) {
        const signal = Number(value) < 0 ? "-" : ""
 
-       value = String(value).replace(/\D/g, "")
+       value = String(value).replace(/\,?\,?/g, "")
 
        value = Number(value) / 100
 

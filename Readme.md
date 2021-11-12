@@ -9,7 +9,7 @@ Control your finances💰using this app
 ## Additional features
 <br/>
 *
-*local storage (the transctions will be stored)<br/>*
+*local storage (the transactions will be stored)<br/>*
 *
 *This project is for the **[MaratonaDiscover](https://maratonadiscover.rocketseat.com.br/)**, realized by **[@Rocketseat](https://github.com/Rocketseat)**.
 ## ⚜️ Layout
